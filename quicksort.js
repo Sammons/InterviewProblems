@@ -38,7 +38,7 @@ var quicksort = module.exports = function(array,comparator) {
 }
 
 if (module.parent !== undefined) {
-	var comp = function(a,b){return a > b;};
+	var comp = function(a,b){return a >= b;};
 	var test_array = [];
 	for (var i = 0; i < 1000; i++) test_array.push(Math.round(Math.random()*100));
 	quicksort(test_array,comp)
